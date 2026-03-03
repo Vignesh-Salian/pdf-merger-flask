@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merger</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    
+    <h2>PDF MERGER</h2>
+
+    <form action="/merge" method="POST" enctype="multipart/form-data">
+        <input type="file" name="pdfs" multiple>
+        <br><br>
+        <button type="submit">Merge</button>
+    </form>
+
+</body>
+</html>
